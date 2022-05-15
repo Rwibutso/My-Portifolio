@@ -1,0 +1,140 @@
+.a{
+    height: 100vh;
+    display: flex;
+}
+.a-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.a-right{
+    flex: 1;
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+    
+}
+.a-card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 50px;
+    position: absolute;
+    overflow: hidden;
+}
+.a-wraper-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.a-card-bg{
+    position: absolute;
+    background-color: rgb(99, 60, 60);
+    top: 50px;
+    left: 100px;
+    width: 60%;
+    height: 70vh;
+    border-radius: 50px;
+}
+.a-right{
+    display: flex;
+    height: 100vh;
+    
+}
+.a-sub{
+    margin: 50px 0px;
+    padding-right: 20px;
+    
+}
+.a-tittle{
+    font-weight: 500;
+}
+.a-desc{
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .a{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .a-card-bg{
+       display: none;
+    
+    }
+    .a-desc{
+        margin-bottom: -150px;
+    }
+    .a-sub{
+        margin-top:  10px;
+    }
+    .a-tittle{
+        margin-top: -50px;
+    }
+  
+   
+    .a-left{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .a{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        justify-content: center; 
+    }
+    .a-card-bg{
+        display: none;
+     
+     }
+   
+     .a-card{
+         height: 50vh;
+         width: 90%;
+         margin-top: 100px;
+     }
+     .a-left{
+         height: 100%;
+     }
+     .a-right{
+         padding: 10px;
+     }
+     .a-wrapper{
+         padding: 20px;
+     }
+}
+
+@media screen and (max-width: 1200px){
+    .a-wrapper{
+        margin-top: 200px;
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .a-card-bg{
+        margin-left: -80px;
+        margin-top: -10px;
+        width: 80%;
+        height: 80%;
+
+    }
+    .a-card{
+        width: 80%;
+        height: 80%;
+        margin-bottom: -50px;
+        margin-right: -20px;
+    }
+    }
